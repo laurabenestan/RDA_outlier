@@ -80,7 +80,7 @@ We visually and quantitatively checked the correlation among predictors using th
 ### Visualize correlations among predictors
 pairs.panels(env[,2:25], scale=T)
 
-! Screen Shot 2019-04-16 at 19.58.38.png
+![Correlations among our predictors.](Screen Shot 2019-04-16 at 19.58.38.png)
 
 ```
 ### Create a correlation matrix
@@ -100,9 +100,8 @@ The R2 inform about the percent of genomic variation that can be explained by on
 Here for instance, we found a adjusted R2 of 0.0002, which means that our constrained ordination explains about 0.02% of the variation.
 This low explanatory power is not surprising given that we expect that most of the SNPs in our dataset will not show a relationship with the environmental predictors (e.g., most SNPs will be neutral).
 ```
+# Run the RDA
 diplodus.rda <- rda(gen.imp ~ ., data=pred, scale=T)
-diplodus.rda 
-# O
 ### Calculate the adjusted R2
 RsquareAdj(diplodus.rda)
 
@@ -140,7 +139,7 @@ We also add a second grouping information, here the "inside" or "outside" an MPA
 inside_outside <- read.table("Inside_outside_diplodus.txt",header=FALSE,sep="\t")
 mpa_env_inside_outside <- merge(x=mpa_env,y=inside_outside, by.x=c("INDIVIDUALS"), by.y=c("V1"))
 reserve <- mpa_env_inside_outside$V5
-### 6 nice colors for the MPA
+### 6 and 9 nice colors for the MPA
 bg <- c("#ff7f00","#1f78b4","#ffff33","#a6cee3","#33a02c","#e31a1c")
 bg <-  c("#ff7f00","darkred","#1f78b4","#ffff33","pink","#a6cee3","#33a02c","#e31a1c","blueviolet")
 
@@ -152,116 +151,12 @@ points(diplodus.rda, display="sites", cex=1.3, scaling=3, col = bg[as.numeric(ec
 text(diplodus.rda, scaling=3, display="bp", col="#0868ac", cex=1)                           # the predictors
 legend("bottomright", legend=levels(eco), bty="n", col="gray32", pch=21, cex=1, pt.bg=bg)
 dev.off()
+```
 
+![RDA considering two categories.](RDA_outside_inside.pdf)
+
+```
 ### Extract individuals information
 rda_indv <- as.data.frame(scores(diplodus.rda, display=c("sites")))
 write.table(rda_indv, "rda_diplodus_276ind.txt", quote=FALSE, row.names=TRUE)
 ```
-
-#################### Identify candidate SNPs involved in local adaptation #########
-### Extract the SNP loadings from the three significant constrained axes
-load.rda <- scores(diplodus.rda, choices=c(1:3), display="species")  # Species scores for the first three constrained axes
-
-#histograms of the loadings on each RDA axis
-hist(load.rda[,1], main="Loadings on RDA1")
-hist(load.rda[,2], main="Loadings on RDA2")
-hist(load.rda[,3], main="Loadings on RDA3") 
-
-### Identifying as many potential candidate loci as possible 
-outliers <- function(x,z){
-  lims <- mean(x) + c(-1, 1) * z * sd(x)     # find loadings +/-z sd from mean loading     
-  x[x < lims[1] | x > lims[2]]               # locus names in these tails
-}
-
-### Apply it to each significant constrained axis
-cand1 <- outliers(load.rda[,1],3) # 82 for diplodus # 95 for mullus
-cand2 <- outliers(load.rda[,2],3) # 69 for diplodus # 131 for mullus
-cand3 <- outliers(load.rda[,3],3) # 131 for diplodus # 64 for mullus
-
-### Calculate the total of candidates loci
-ncand <- length(cand1) + length(cand2) + length(cand3)
-ncand
-write.table(ncand, "290outliers_mullus.txt", quote=FALSE, sep= )
-### Organize our results by making one data frame with the axis, SNP name, loading, & correlation with each predictor
-cand1 <- cbind.data.frame(rep(1,times=length(cand1)), names(cand1), unname(cand1))
-cand2 <- cbind.data.frame(rep(2,times=length(cand2)), names(cand2), unname(cand2))
-cand3 <- cbind.data.frame(rep(3,times=length(cand3)), names(cand3), unname(cand3))
-# Give colnames
-colnames(cand1) <- colnames(cand2) <- colnames(cand3) <- c("axis","snp","loading")
-# Paste all the candidates
-cand <- rbind(cand1, cand2, cand3)
-cand$snp <- as.character(cand$snp)
-
-### Add in the correlations of each candidate SNP with the three environmental predictors:
-foo <- matrix(nrow=(ncand), ncol=3)  # 3 columns for 3 predictors
-colnames(foo) <- c("salinity_surface_repro_min","chlo_surface_max","chlo_benthic_min")
-
-for (i in 1:length(cand$snp)) {
-  nam <- cand[i,2]
-  snp.gen <- gen.imp[,nam]
-  foo[i,] <- apply(pred,2,function(x) cor(x,snp.gen))
-}
-
-### Now we have a data frame of 282 candidate SNPs and their correlation with our 3 environmental predictors.
-cand <- cbind.data.frame(cand,foo)  
-head(cand)
-
-### Investigate the duplicated selection
-length(cand$snp[duplicated(cand$snp)]) # 0 duplicated loci
-foo <- cbind(cand$axis, duplicated(cand$snp)) 
-table(foo[foo[,1]==1,2]) # no duplicates on axis 1
-table(foo[foo[,1]==2,2]) # no duplicates on axis 2
-table(foo[foo[,1]==3,2]) # no duplicates on axis 3
-cand <- cand[!duplicated(cand$snp),] # remove duplicate detections
-
-### See which of the predictors each candidate SNP is most strongly correlated with
-for (i in 1:length(cand$snp)) {
-  bar <- cand[i,]
-  cand[i,7] <- names(which.max(abs(bar[4:6]))) # gives the variable
-  cand[i,8] <- max(abs(bar[4:6]))              # gives the correlation
-}
-
-colnames(cand)[7] <- "predictor"
-colnames(cand)[8] <- "correlation"
-
-### Most SNPs are associated with the chlorophylle variable
-table(cand$predictor) 
-#chlo_benthic_min           chlo_surface_max 
-#127                         75 
-#salinity_surface_repro_min 
-#80 
-
-### Plot the SNPs
-sel <- cand$snp
-env <- cand$predictor
-env[env=="chlo_benthic_min"] <- '#1f78b4'
-env[env=="salinity_surface_repro_min" ] <- '#a6cee3'
-env[env=="chlo_surface_max"] <- '#6a3d9a'
-
-### Color by predictor:
-col.pred <- rownames(diplodus.rda$CCA$v) # pull the SNP names
-
-for (i in 1:length(sel)) {           # color code candidate SNPs
-  foo <- match(sel[i],col.pred)
-  col.pred[foo] <- env[i]
-}
-
-col.pred[grep("chr",col.pred)] <- '#f1eef6' # non-candidate SNPs
-empty <- col.pred
-empty[grep("#f1eef6",empty)] <- rgb(0,1,0, alpha=0) # transparent
-empty.outline <- ifelse(empty=="#00FF0000","#00FF0000","gray32")
-bg <- c('#1f78b4','#a6cee3','#6a3d9a')
-
-# axes 1 & 2
-plot(diplodus.rda, type="n", scaling=3, xlim=c(-1,1), ylim=c(-1,1))
-points(diplodus.rda, display="species", pch=21, cex=1, col="gray32", bg=col.pred, scaling=3)
-points(diplodus.rda, display="species", pch=21, cex=1, col=empty.outline, bg=empty, scaling=3)
-text(diplodus.rda, scaling=3, display="bp", col="#0868ac", cex=1)
-legend("bottomright", legend=c("chlo_benthic_min","salinity_surface_repro_min","chlo_surface_max"), bty="n", col="gray32", pch=21, cex=1, pt.bg=bg)
-
-# axes 1 & 3
-plot(wolf.rda, type="n", scaling=3, xlim=c(-1,1), ylim=c(-1,1), choices=c(1,3))
-points(wolf.rda, display="species", pch=21, cex=1, col="gray32", bg=col.pred, scaling=3, choices=c(1,3))
-points(wolf.rda, display="species", pch=21, cex=1, col=empty.outline, bg=empty, scaling=3, choices=c(1,3))
-text(wolf.rda, scaling=3, display="bp", col="#0868ac", cex=1, choices=c(1,3))
-legend("bottomright", legend=c("AP","cvP","MDR","AMT","NDVI","Elev","sdT","Tree"), bty="n", col="gray32", pch=21, cex=1, pt.bg=bg)
