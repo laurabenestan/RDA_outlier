@@ -1,0 +1,277 @@
+INDIVIDUALS	STRATA
+dip_bal_001	Llevant de Mallorca
+dip_bal_002	Illes Columbretes
+dip_bal_003	Illes Columbretes
+dip_bal_004	Illes Columbretes
+dip_bal_005	Illes Columbretes
+dip_bal_006	Illes Columbretes
+dip_bal_007	Illes Columbretes
+dip_bal_009	Illes Columbretes
+dip_bal_010	Illes Columbretes
+dip_bal_011	Illes Columbretes
+dip_bal_012	Illes Columbretes
+dip_bal_013	Illes Columbretes
+dip_bal_014	Illes Columbretes
+dip_bal_015	Illes Columbretes
+dip_bal_016	Illes Columbretes
+dip_bal_017	Illes Columbretes
+dip_bal_018	Illes Columbretes
+dip_bal_019	Illes Columbretes
+dip_bal_020	Illes Columbretes
+dip_bal_021	Illes Columbretes
+dip_bal_022	Illes Columbretes
+dip_bal_023	Illes Columbretes
+dip_bal_024	Illes Columbretes
+dip_bal_025	Illes Columbretes
+dip_bal_026	Illes Columbretes
+dip_bal_027	Illes Columbretes
+dip_bal_028	Illes Columbretes
+dip_bal_029	Illes Columbretes
+dip_bal_030	Illes Columbretes
+dip_bal_031	Illes Columbretes
+dip_bal_037	Llevant de Mallorca
+dip_bal_045	Llevant de Mallorca
+dip_bal_048	Llevant de Mallorca
+dip_bal_053	Llevant de Mallorca
+dip_bal_054	Llevant de Mallorca
+dip_bal_056	Llevant de Mallorca
+dip_bal_060	Llevant de Mallorca
+dip_bal_061	Llevant de Mallorca
+dip_bal_062	Llevant de Mallorca
+dip_bal_063	Llevant de Mallorca
+dip_bal_065	Llevant de Mallorca
+dip_bal_067	Llevant de Mallorca
+dip_bal_071	Llevant de Mallorca
+dip_bal_072	Llevant de Mallorca
+dip_bal_073	Llevant de Mallorca
+dip_bal_074	Llevant de Mallorca
+dip_bal_077	Llevant de Mallorca
+dip_bal_078	Llevant de Mallorca
+dip_bal_079	Llevant de Mallorca
+dip_bal_080	Llevant de Mallorca
+dip_bal_081	Llevant de Mallorca
+dip_bal_082	Llevant de Mallorca
+dip_bal_083	Llevant de Mallorca
+dip_bal_084	Llevant de Mallorca
+dip_bal_085	Llevant de Mallorca
+dip_bal_086	Llevant de Mallorca
+dip_bal_087	Llevant de Mallorca
+dip_bal_089	Llevant de Mallorca
+dip_bal_091	Llevant de Mallorca
+dip_bal_094	Llevant de Mallorca
+dip_bal_095	Llevant de Mallorca
+dip_bal_096	Llevant de Mallorca
+dip_bal_097	Llevant de Mallorca
+dip_bal_098	Llevant de Mallorca
+dip_bal_099	Llevant de Mallorca
+dip_bal_100	Llevant de Mallorca
+dip_bal_101	Llevant de Mallorca
+dip_bal_102	Llevant de Mallorca
+dip_bal_103	Llevant de Mallorca
+dip_bal_105	Llevant de Mallorca
+dip_bal_107	Llevant de Mallorca
+dip_bal_108	Llevant de Mallorca
+dip_bal_109	Llevant de Mallorca
+dip_bal_110	Llevant de Mallorca
+dip_bal_111	Llevant de Mallorca
+dip_bal_112	Llevant de Mallorca
+dip_bal_113	Llevant de Mallorca
+dip_bal_114	Llevant de Mallorca
+dip_bal_115	Llevant de Mallorca
+dip_bal_116	Llevant de Mallorca
+dip_bal_117	Llevant de Mallorca
+dip_bal_118	Llevant de Mallorca
+dip_bal_119	Llevant de Mallorca
+dip_bal_120	Llevant de Mallorca
+dip_fra_003	Cerbere-Banyuls
+dip_fra_005	Cerbere-Banyuls
+dip_fra_007	Cerbere-Banyuls
+dip_fra_009	Cerbere-Banyuls
+dip_fra_014	Cerbere-Banyuls
+dip_fra_021	Cerbere-Banyuls
+dip_fra_022	Cerbere-Banyuls
+dip_fra_023	Cerbere-Banyuls
+dip_fra_024	Cerbere-Banyuls
+dip_fra_025	Cerbere-Banyuls
+dip_fra_026	Cerbere-Banyuls
+dip_fra_027	Cerbere-Banyuls
+dip_fra_028	Cerbere-Banyuls
+dip_fra_029	Cerbere-Banyuls
+dip_fra_030	Cerbere-Banyuls
+dip_fra_031	Cerbere-Banyuls
+dip_fra_032	Cerbere-Banyuls
+dip_fra_033	Cerbere-Banyuls
+dip_fra_034	Cerbere-Banyuls
+dip_fra_035	Cerbere-Banyuls
+dip_fra_036	Cerbere-Banyuls
+dip_fra_037	Cerbere-Banyuls
+dip_fra_038	Cerbere-Banyuls
+dip_fra_039	Cerbere-Banyuls
+dip_fra_040	Cerbere-Banyuls
+dip_fra_041	Cerbere-Banyuls
+dip_fra_042	Cerbere-Banyuls
+dip_fra_043	Cerbere-Banyuls
+dip_fra_044	Cerbere-Banyuls
+dip_fra_045	Cerbere-Banyuls
+dip_fra_046	Cerbere-Banyuls
+dip_fra_047	Cerbere-Banyuls
+dip_fra_048	Cerbere-Banyuls
+dip_fra_050	Cerbere-Banyuls
+dip_fra_051	Cerbere-Banyuls
+dip_fra_052	Cerbere-Banyuls
+dip_fra_053	Cerbere-Banyuls
+dip_fra_054	Cerbere-Banyuls
+dip_fra_055	Cerbere-Banyuls
+dip_fra_056	Cerbere-Banyuls
+dip_fra_057	Cerbere-Banyuls
+dip_fra_058	Cerbere-Banyuls
+dip_fra_059	Cerbere-Banyuls
+dip_fra_060	Cerbere-Banyuls
+dip_fra_061	Cerbere-Banyuls
+dip_fra_062	Cerbere-Banyuls
+dip_fra_063	Cerbere-Banyuls
+dip_fra_064	Cerbere-Banyuls
+dip_fra_068	Cerbere-Banyuls
+dip_fra_069	Cerbere-Banyuls
+dip_fra_070	Cerbere-Banyuls
+dip_fra_071	Cerbere-Banyuls
+dip_fra_072	Cerbere-Banyuls
+dip_fra_073	Cerbere-Banyuls
+dip_fra_076	Cerbere-Banyuls
+dip_fra_077	Cerbere-Banyuls
+dip_fra_078	Cerbere-Banyuls
+dip_fra_079	Cerbere-Banyuls
+dip_fra_080	Cerbere-Banyuls
+dip_fra_081	Cerbere-Banyuls
+dip_fra_082	Cerbere-Banyuls
+dip_fra_083	Cerbere-Banyuls
+dip_fra_084	Cerbere-Banyuls
+dip_fra_086	Cerbere-Banyuls
+dip_fra_087	Cerbere-Banyuls
+dip_fra_088	Cerbere-Banyuls
+dip_fra_089	Cerbere-Banyuls
+dip_fra_090	Cerbere-Banyuls
+dip_fra_091	Cerbere-Banyuls
+dip_fra_093	Cerbere-Banyuls
+dip_fra_094	Cerbere-Banyuls
+dip_fra_095	Cerbere-Banyuls
+dip_fra_096	Cerbere-Banyuls
+dip_fra_097	Cerbere-Banyuls
+dip_fra_098	Cerbere-Banyuls
+dip_fra_099	Cerbere-Banyuls
+dip_fra_100	Cerbere-Banyuls
+dip_spaAL_003	Illa de Tabarca
+dip_spaAL_006	Illa de Tabarca
+dip_spaAL_008	Illa de Tabarca
+dip_spaAL_011	Illa de Tabarca
+dip_spaAL_015	Illa de Tabarca
+dip_spaAL_016	Illa de Tabarca
+dip_spaAL_020	Illa de Tabarca
+dip_spaAL_022	Illa de Tabarca
+dip_spaAL_023	Illa de Tabarca
+dip_spaAL_024	Illa de Tabarca
+dip_spaAL_026	Illa de Tabarca
+dip_spaAL_028	Illa de Tabarca
+dip_spaAL_031	Illa de Tabarca
+dip_spaAL_035	Illa de Tabarca
+dip_spaAL_037	Illa de Tabarca
+dip_spaAL_040	Illa de Tabarca
+dip_spaAL_042	Illa de Tabarca
+dip_spaAL_044	Illa de Tabarca
+dip_spaAL_047	Illa de Tabarca
+dip_spaAL_049	Illa de Tabarca
+dip_spaAL_051	Illa de Tabarca
+dip_spaAL_055	Illa de Tabarca
+dip_spaAL_057	Illa de Tabarca
+dip_spaAL_058	Illa de Tabarca
+dip_spaAL_059	Illa de Tabarca
+dip_spaAL_060	Illa de Tabarca
+dip_spaAL_061	Illa de Tabarca
+dip_spaAL_062	Illa de Tabarca
+dip_spaAL_063	Illa de Tabarca
+dip_spaAL_064	Illa de Tabarca
+dip_spaAL_065	Illa de Tabarca
+dip_spaAL_066	Illa de Tabarca
+dip_spaAL_067	Illa de Tabarca
+dip_spaAL_068	Illa de Tabarca
+dip_spaAL_069	Illa de Tabarca
+dip_spaAL_070	Illa de Tabarca
+dip_spaAL_074	Illa de Tabarca
+dip_spaAL_075	Illa de Tabarca
+dip_spaAL_076	Illa de Tabarca
+dip_spaAL_077	Illa de Tabarca
+dip_spaAL_078	Illa de Tabarca
+dip_spaAL_079	Illa de Tabarca
+dip_spaAL_081	Illa de Tabarca
+dip_spaAL_083	Illa de Tabarca
+dip_spaAL_084	Illa de Tabarca
+dip_spaN_001	Cap de Creus
+dip_spaN_002	Cap de Creus
+dip_spaN_003	Cap de Creus
+dip_spaN_004	Cap de Creus
+dip_spaN_005	Cap de Creus
+dip_spaN_006	Cap de Creus
+dip_spaN_007	Cap de Creus
+dip_spaN_008	Cap de Creus
+dip_spaN_009	Cap de Creus
+dip_spaN_010	Cap de Creus
+dip_spaN_011	Cap de Creus
+dip_spaN_012	Cap de Creus
+dip_spaN_013	Cap de Creus
+dip_spaN_014	Cap de Creus
+dip_spaN_015	Cap de Creus
+dip_spaN_016	Cap de Creus
+dip_spaN_017	Cap de Creus
+dip_spaN_019	Cap de Creus
+dip_spaN_020	Cap de Creus
+dip_spaN_021	Cap de Creus
+dip_spaN_035	Cap de Creus
+dip_spaN_036	Cap de Creus
+dip_spaN_046	Cap de Creus
+dip_spaN_047	Illes Columbretes
+dip_spaN_054	Illes Columbretes
+dip_spaN_057	Cap de Creus
+dip_spaN_062	Cap de Creus
+dip_spaN_072	Cap de Creus
+dip_spaN_080	Cap de Creus
+dip_spaS_004	Cabo de Gata Níjar
+dip_spaS_013	Cabo de Gata Níjar
+dip_spaS_018	Cabo de Gata Níjar
+dip_spaS_020	Illa de Tabarca
+dip_spaS_023	Illa de Tabarca
+dip_spaS_025	Illa de Tabarca
+dip_spaS_027	Illa de Tabarca
+dip_spaS_029	Illa de Tabarca
+dip_spaS_030	Illa de Tabarca
+dip_spaS_031	Illa de Tabarca
+dip_spaS_036	Illa de Tabarca
+dip_spaS_037	Illa de Tabarca
+dip_spaS_041	Illa de Tabarca
+dip_spaS_043	Illa de Tabarca
+dip_spaS_045	Illa de Tabarca
+dip_spaS_050	Illa de Tabarca
+dip_spaS_053	Illa de Tabarca
+dip_spaS_054	Illa de Tabarca
+dip_spaS_064	Illa de Tabarca
+dip_spaS_068	Cabo de Gata Níjar
+dip_spaS_069	Cabo de Gata Níjar
+dip_spaS_070	Cabo de Gata Níjar
+dip_spaS_078	Cabo de Gata Níjar
+dip_spaS_080	Cabo de Gata Níjar
+dip_spaS_093	Cabo de Gata Níjar
+dip_spaS_094	Cabo de Gata Níjar
+dip_spaS_095	Cabo de Gata Níjar
+dip_spaS_096	Cabo de Gata Níjar
+dip_spaS_097	Cabo de Gata Níjar
+dip_spaS_101	Cabo de Gata Níjar
+dip_spaS_102	Cabo de Gata Níjar
+dip_spaS_110	Cabo de Gata Níjar
+dip_spaS_111	Cabo de Gata Níjar
+dip_spaS_112	Cabo de Gata Níjar
+dip_spaS_113	Cabo de Gata Níjar
+dip_spaS_114	Cabo de Gata Níjar
+dip_spaS_115	Cabo de Gata Níjar
+dip_spaS_116	Cabo de Gata Níjar
+dip_spaS_117	Cabo de Gata Níjar
+dip_spaS_118	Cabo de Gata Níjar
+dip_spaS_119	Cabo de Gata Níjar

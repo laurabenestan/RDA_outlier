@@ -1,0 +1,277 @@
+INDIVIDUALS	STRATA
+dip_bal_001	Sand
+dip_bal_002	Sand
+dip_bal_003	Sand
+dip_bal_004	Sand
+dip_bal_005	Sand
+dip_bal_006	Sand
+dip_bal_007	Sand
+dip_bal_009	Sand
+dip_bal_010	Sand
+dip_bal_011	Sand
+dip_bal_012	Sand
+dip_bal_013	Sand
+dip_bal_014	Sand
+dip_bal_015	Sand
+dip_bal_016	Sand
+dip_bal_017	Sand
+dip_bal_018	Sand
+dip_bal_019	Sand
+dip_bal_020	Sand
+dip_bal_021	Sand
+dip_bal_022	Sand
+dip_bal_023	Sand
+dip_bal_024	Sand
+dip_bal_025	Sand
+dip_bal_026	Coarse and mixed sediment
+dip_bal_027	Coarse and mixed sediment
+dip_bal_028	Coarse and mixed sediment
+dip_bal_029	Coarse and mixed sediment
+dip_bal_030	Coarse and mixed sediment
+dip_bal_031	Coarse and mixed sediment
+dip_bal_037	Posidonia oceanica meadows
+dip_bal_045	Posidonia oceanica meadows
+dip_bal_048	Rock or other hard substrata
+dip_bal_053	Sandy mud
+dip_bal_054	Sandy mud
+dip_bal_056	Posidonia oceanica meadows
+dip_bal_060	Posidonia oceanica meadows
+dip_bal_061	Rock or other hard substrata
+dip_bal_062	Rock or other hard substrata
+dip_bal_063	Sandy mud
+dip_bal_065	Posidonia oceanica meadows
+dip_bal_067	Posidonia oceanica meadows
+dip_bal_071	Posidonia oceanica meadows
+dip_bal_072	Sand
+dip_bal_073	Sand
+dip_bal_074	Coarse and mixed sediment
+dip_bal_077	Coarse and mixed sediment
+dip_bal_078	Coarse and mixed sediment
+dip_bal_079	Coarse and mixed sediment
+dip_bal_080	Coarse and mixed sediment
+dip_bal_081	Coarse and mixed sediment
+dip_bal_082	Sand
+dip_bal_083	Sand
+dip_bal_084	Sand
+dip_bal_085	Sand
+dip_bal_086	Sand
+dip_bal_087	Sand
+dip_bal_089	Unknown
+dip_bal_091	Posidonia oceanica meadows
+dip_bal_094	Posidonia oceanica meadows
+dip_bal_095	Sand
+dip_bal_096	Sandy mud
+dip_bal_097	Sandy mud
+dip_bal_098	Sandy mud
+dip_bal_099	Sandy mud
+dip_bal_100	Sandy mud
+dip_bal_101	Sandy mud
+dip_bal_102	Sand
+dip_bal_103	Sand
+dip_bal_105	Posidonia oceanica meadows
+dip_bal_107	Sand
+dip_bal_108	Sand
+dip_bal_109	Sand
+dip_bal_110	Sand
+dip_bal_111	Sand
+dip_bal_112	Rock or other hard substrata
+dip_bal_113	Rock or other hard substrata
+dip_bal_114	Sand
+dip_bal_115	Unknown
+dip_bal_116	Posidonia oceanica meadows
+dip_bal_117	Sand
+dip_bal_118	Sandy mud
+dip_bal_119	Posidonia oceanica meadows
+dip_bal_120	Posidonia oceanica meadows
+dip_fra_003	Rock or other hard substrata
+dip_fra_005	Sand
+dip_fra_007	Sand
+dip_fra_009	Sand
+dip_fra_014	Sand
+dip_fra_021	Muddy sand
+dip_fra_022	Muddy sand
+dip_fra_023	Muddy sand
+dip_fra_024	Muddy sand
+dip_fra_025	Muddy sand
+dip_fra_026	Muddy sand
+dip_fra_027	Muddy sand
+dip_fra_028	Muddy sand
+dip_fra_029	Muddy sand
+dip_fra_030	Muddy sand
+dip_fra_031	Muddy sand
+dip_fra_032	Muddy sand
+dip_fra_033	Muddy sand
+dip_fra_034	Muddy sand
+dip_fra_035	Muddy sand
+dip_fra_036	Muddy sand
+dip_fra_037	Muddy sand
+dip_fra_038	Muddy sand
+dip_fra_039	Muddy sand
+dip_fra_040	Muddy sand
+dip_fra_041	Muddy sand
+dip_fra_042	Muddy sand
+dip_fra_043	Muddy sand
+dip_fra_044	Muddy sand
+dip_fra_045	Muddy sand
+dip_fra_046	Muddy sand
+dip_fra_047	Muddy sand
+dip_fra_048	Muddy sand
+dip_fra_050	Muddy sand
+dip_fra_051	Muddy sand
+dip_fra_052	Muddy sand
+dip_fra_053	Muddy sand
+dip_fra_054	Muddy sand
+dip_fra_055	Muddy sand
+dip_fra_056	Muddy sand
+dip_fra_057	Muddy sand
+dip_fra_058	Muddy sand
+dip_fra_059	Muddy sand
+dip_fra_060	Muddy sand
+dip_fra_061	Muddy sand
+dip_fra_062	Muddy sand
+dip_fra_063	Muddy sand
+dip_fra_064	Muddy sand
+dip_fra_068	Sand
+dip_fra_069	Sand
+dip_fra_070	Sand
+dip_fra_071	Sand
+dip_fra_072	Sand
+dip_fra_073	Sand
+dip_fra_076	Sand
+dip_fra_077	Sand
+dip_fra_078	Sand
+dip_fra_079	Sand
+dip_fra_080	Sand
+dip_fra_081	Sand
+dip_fra_082	Sand
+dip_fra_083	Sand
+dip_fra_084	Sand
+dip_fra_086	Sand
+dip_fra_087	Sand
+dip_fra_088	Sand
+dip_fra_089	Sand
+dip_fra_090	Sand
+dip_fra_091	Sand
+dip_fra_093	Sand
+dip_fra_094	Sand
+dip_fra_095	Sand
+dip_fra_096	Sand
+dip_fra_097	Sand
+dip_fra_098	Sand
+dip_fra_099	Sand
+dip_fra_100	Sand
+dip_spaAL_003	Posidonia oceanica meadows
+dip_spaAL_006	Posidonia oceanica meadows
+dip_spaAL_008	Posidonia oceanica meadows
+dip_spaAL_011	Sand
+dip_spaAL_015	Posidonia oceanica meadows
+dip_spaAL_016	Posidonia oceanica meadows
+dip_spaAL_020	Posidonia oceanica meadows
+dip_spaAL_022	Posidonia oceanica meadows
+dip_spaAL_023	Posidonia oceanica meadows
+dip_spaAL_024	Posidonia oceanica meadows
+dip_spaAL_026	Posidonia oceanica meadows
+dip_spaAL_028	Posidonia oceanica meadows
+dip_spaAL_031	Posidonia oceanica meadows
+dip_spaAL_035	Posidonia oceanica meadows
+dip_spaAL_037	Posidonia oceanica meadows
+dip_spaAL_040	Sand
+dip_spaAL_042	Sand
+dip_spaAL_044	Sand
+dip_spaAL_047	Posidonia oceanica meadows
+dip_spaAL_049	Sand
+dip_spaAL_051	Sand
+dip_spaAL_055	Sand
+dip_spaAL_057	Posidonia oceanica meadows
+dip_spaAL_058	Posidonia oceanica meadows
+dip_spaAL_059	Posidonia oceanica meadows
+dip_spaAL_060	Posidonia oceanica meadows
+dip_spaAL_061	Posidonia oceanica meadows
+dip_spaAL_062	Posidonia oceanica meadows
+dip_spaAL_063	Posidonia oceanica meadows
+dip_spaAL_064	Posidonia oceanica meadows
+dip_spaAL_065	Posidonia oceanica meadows
+dip_spaAL_066	Posidonia oceanica meadows
+dip_spaAL_067	Posidonia oceanica meadows
+dip_spaAL_068	Posidonia oceanica meadows
+dip_spaAL_069	Posidonia oceanica meadows
+dip_spaAL_070	Posidonia oceanica meadows
+dip_spaAL_074	Posidonia oceanica meadows
+dip_spaAL_075	Posidonia oceanica meadows
+dip_spaAL_076	Posidonia oceanica meadows
+dip_spaAL_077	Posidonia oceanica meadows
+dip_spaAL_078	Posidonia oceanica meadows
+dip_spaAL_079	Posidonia oceanica meadows
+dip_spaAL_081	Posidonia oceanica meadows
+dip_spaAL_083	Posidonia oceanica meadows
+dip_spaAL_084	Posidonia oceanica meadows
+dip_spaN_001	Posidonia oceanica meadows
+dip_spaN_002	Posidonia oceanica meadows
+dip_spaN_003	Posidonia oceanica meadows
+dip_spaN_004	Sandy mud
+dip_spaN_005	Sandy mud
+dip_spaN_006	Sandy mud
+dip_spaN_007	Sandy mud
+dip_spaN_008	Sandy mud
+dip_spaN_009	Posidonia oceanica meadows
+dip_spaN_010	Posidonia oceanica meadows
+dip_spaN_011	Posidonia oceanica meadows
+dip_spaN_012	Posidonia oceanica meadows
+dip_spaN_013	Posidonia oceanica meadows
+dip_spaN_014	Posidonia oceanica meadows
+dip_spaN_015	Posidonia oceanica meadows
+dip_spaN_016	Posidonia oceanica meadows
+dip_spaN_017	Posidonia oceanica meadows
+dip_spaN_019	Posidonia oceanica meadows
+dip_spaN_020	Posidonia oceanica meadows
+dip_spaN_021	Posidonia oceanica meadows
+dip_spaN_035	Posidonia oceanica meadows
+dip_spaN_036	Posidonia oceanica meadows
+dip_spaN_046	Sand
+dip_spaN_047	Sand
+dip_spaN_054	Sand
+dip_spaN_057	Posidonia oceanica meadows
+dip_spaN_062	Sand
+dip_spaN_072	Posidonia oceanica meadows
+dip_spaN_080	Posidonia oceanica meadows
+dip_spaS_004	Sand
+dip_spaS_013	Sand
+dip_spaS_018	Posidonia oceanica meadows
+dip_spaS_020	Fine mud
+dip_spaS_023	Muddy sand
+dip_spaS_025	Muddy sand
+dip_spaS_027	Sand
+dip_spaS_029	Fine mud
+dip_spaS_030	Rock or other hard substrata
+dip_spaS_031	Unknown
+dip_spaS_036	Fine mud
+dip_spaS_037	Fine mud
+dip_spaS_041	Fine mud
+dip_spaS_043	Fine mud
+dip_spaS_045	Fine mud
+dip_spaS_050	Sand
+dip_spaS_053	Fine mud
+dip_spaS_054	Fine mud
+dip_spaS_064	Sand
+dip_spaS_068	Posidonia oceanica meadows
+dip_spaS_069	Posidonia oceanica meadows
+dip_spaS_070	Posidonia oceanica meadows
+dip_spaS_078	Posidonia oceanica meadows
+dip_spaS_080	Posidonia oceanica meadows
+dip_spaS_093	Posidonia oceanica meadows
+dip_spaS_094	Sand
+dip_spaS_095	Posidonia oceanica meadows
+dip_spaS_096	Posidonia oceanica meadows
+dip_spaS_097	Sand
+dip_spaS_101	Posidonia oceanica meadows
+dip_spaS_102	Posidonia oceanica meadows
+dip_spaS_110	Sand
+dip_spaS_111	Posidonia oceanica meadows
+dip_spaS_112	Unknown
+dip_spaS_113	Unknown
+dip_spaS_114	Posidonia oceanica meadows
+dip_spaS_115	Posidonia oceanica meadows
+dip_spaS_116	Posidonia oceanica meadows
+dip_spaS_117	Coarse and mixed sediment
+dip_spaS_118	Coarse and mixed sediment
+dip_spaS_119	Coarse and mixed sediment
