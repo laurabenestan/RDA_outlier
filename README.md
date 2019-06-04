@@ -77,10 +77,12 @@ env$labels <- as.character(env$labels)
 ```
 
 We remove one of the highly correlated predictors by visually and quantitatively checking the correlation among predictors using the function called `pairs.panels`.
-### Visualize correlations among predictors
-pairs.panels(env[,2:25], scale=T)
 
-![Correlations among our predictors.](Screen Shot 2019-04-16 at 19.58.38.png)
+```{r}
+pairs.panels(env[,2:25], scale=T)
+```
+
+![Correlations among our predictors.](Correlation_predictor.png)
 
 ```
 ### Create a correlation matrix
