@@ -154,7 +154,7 @@ legend("bottomright", legend=levels(eco), bty="n", col="gray32", pch=21, cex=1, 
 dev.off()
 ```
 
-![RDA considering two categories.]( RDA_diplodus.pdf)
+![RDA visualisation.](RDA_diplodus.pdf)
 
 We extract individuals information.
 ```
