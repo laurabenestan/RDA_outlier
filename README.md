@@ -1,6 +1,6 @@
 # ReserveBenefit--RDA_adaptation
 
-# Stacks Workflow
+# RDA analysis
 
 RDA analysis adapted from the nice workflow available in [popgennescent](https://popgen.nescent.org/2018-03-27_RDA_GEA.html)
 
