@@ -9,22 +9,23 @@ Developed by [Laura Benestan](https://github.com/laurabenestan) in
 laboratory.
 
 ## Concept and definition
-This README.txt is widely inspired by the vignette created by Brenna Forester (see https://popgen.nescent.org/2018-03-27_RDA_GEA.html).
+This README.txt is widely inspired by the vignette created by Brenna Forester at [popgennescent](https://popgen.nescent.org/2018-03-27_RDA_GEA.html).
 We used of Redundancy Analysis (RDA) as a genotype-environment association (GEA) method to simultaneously assess the percent of genomic variation explained by environmental variables and to detect loci under selection (see the relevant paper of Forester et al., 2018). 
 RDA is a two-step analysis in which genetic and environmental data are analyzed using multivariate linear regression. 
 Then PCA of the fitted values is used to produce canonical axes, which are linear combinations of the predictors (Legendre & Legendre, 2012). 
 here, we performed the RDA on a individual-based sampling design.
 
 ## Application to our dataset
-Here, we applied RDA to genomic data from 276 and 335 indviduals of the white seabream (Diplodus sargus) and the stripped red mullet (Mullus surmuletus) sampled across the Mediterranean sea. 
-Results of the RDA at the full set of 18,512 and 14,318 single nucleotide polymorphism (SNP) markers will be soon available . 
-We are interested in understanding which environmental factor may drive the genomic divergence of several species. 
-In this case, the data are individual-based, and are input as allele counts (i.e. 0/1/2) for each locus for each individual fish. 
+Here, we apply RDA to genomic data from 276 individuals of the white seabream (Diplodus sargus) sampled across the Mediterranean sea. 
+Results of the RDA at the full set of 18,512 single nucleotide polymorphism (SNP) markers will be soon available. 
+The goal of this study is to understand which environmental factor may drive the genomic divergence observed in this species. 
+In this case, the data is individual-based, and inputs are allele counts (i.e. 0/1/2) for each locus and individual fish. 
 
 # Using R to perform the analysis
 ## Install packages
-First, we need to install the necessary packages and then download the corresponding libraries.
-```
+First, we install the necessary packages and then download the corresponding libraries.
+
+``` {r}
 library(psych)    
 library(vegan)
 library(adegenet)
@@ -34,49 +35,48 @@ library(gsl)
 ```
 ## Read genetic data
 
-```
-#plink_diplodus <- read.PLINK("18512snps-276ind-diplodus.raw", map.file = "18512snps-276ind-diplodus.map", quiet = FALSE)
+```{r}
 plink_diplodus <- read.table("18512snps-276ind-diplodus.raw", header=TRUE, sep=" ", row.names=1)
-plink_mullus <- read.table("14318snps_312ind.raw", header=TRUE, sep=" ", row.names=1)
 dim(plink_diplodus)
 ```
 
 ## Prepare genetic data
 
-We need to remove the names of the samples as we won't consider it to fill the missing values.
-Then missing values are filled using the overall average of the allele frequency variation.
+We remove the names of the samples as we don't consider these values when we will fill the missing values.
+Yet other way to handle the missing values and before doing this step visualize patterns of missingness and perform map-independent imputations of missing genotypes using [grur package](https://github.com/thierrygosselin/grur)
 
-```
-### Remove names
+```{r}
 gen <- plink_diplodus[,6:37029]
-gen <- plink_mullus[,6:28641]
-### Calculate the NA
+```
+
+We calculate the percent of missing data.
+Multivariate analysis are very sensitive to missing data and these missing needs to be filled.
+```{r}
 sum(is.na(gen))# 553,232 NAs in the matrix (~3% missing data)
-### Fill the NAs
+```
+
+Missing values are then filled using the overall average of the allele frequency variation.
+```{r}
 gen.imp <- apply(gen, 2, function(x) replace(x, is.na(x), as.numeric(names(which.max(table(x))))))
 sum(is.na(gen.imp)) # No NAs
 ```
 
 ## Read the environmental data
-```
-### Download environmental data 
+
+We download environmental data in R.
+```{r}
 env <- read.table("276ind-24env-variables.txt",sep="\t",header=T) # for diplodus
-env <- read.table("24env_variables_mullus.txt",sep="\t",header=T) # for mullus
 str(env)
-### Add habitats variable
-habitat <- read.table("habitat_diplodus_276ind.txt",sep="\t",header=T)
-env <- cbind(env, habitat)
 ```
 
 ## Prepare the environmental data
-```
-### Make individual names characters (not factors)
+
+We change the class of the labels.
+```{r}
 env$labels <- as.character(env$labels)
 ```
 
-## Remove one of the highly correlated predictors
-
-We visually and quantitatively checked the correlation among predictors using the function called `pairs.panels`.
+We remove one of the highly correlated predictors by visually and quantitatively checking the correlation among predictors using the function called `pairs.panels`.
 ### Visualize correlations among predictors
 pairs.panels(env[,2:25], scale=T)
 
@@ -153,7 +153,7 @@ legend("bottomright", legend=levels(eco), bty="n", col="gray32", pch=21, cex=1, 
 dev.off()
 ```
 
-![RDA considering two categories.](RDA_outside_inside.pdf)
+![RDA considering two categories.](RDA_both_species.pdf)
 
 ```
 ### Extract individuals information
