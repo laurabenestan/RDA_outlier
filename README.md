@@ -9,10 +9,9 @@ Developed by [Laura Benestan](https://github.com/laurabenestan) in
 laboratory.
 
 ## Concept and definition
-We used of Redundancy Analysis (RDA) as a genotype-environment association (GEA) method to simultaneously assess the percent of genomic variation explained by environmental variables and to detect loci under selection (see the relevant paper of Forester et al., 2018). 
+We used of Redundancy Analysis (RDA) as a genotype-environment association (GEA) method to simultaneously assess the percent of genomic variation explained by environmental variables and to detect loci under selection (see the relevant paper of [Forester et al. 2018](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.14584). 
 RDA is a two-step analysis in which genetic and environmental data are analyzed using multivariate linear regression. 
-Then PCA of the fitted values is used to produce canonical axes, which are linear combinations of the predictors (Legendre & Legendre, 2012). 
-here, we performed the RDA on a individual-based sampling design.
+Then PCA of the fitted values is used to produce canonical axes, which are linear combinations of the predictors (Legendre & Legendre, 2012). Here, we performed the RDA on a individual-based sampling design rather than population-based (see [Benestan et al. 2016] paper (https://onlinelibrary.wiley.com/doi/10.1111/mec.13811)).
 
 ## Application to our dataset
 Here, we apply RDA to genomic data from 276 individuals of the white seabream (Diplodus sargus) sampled across the Mediterranean sea. 
@@ -32,10 +31,23 @@ library(dplyr)
 library(fmsb)
 library(gsl)
 ```
+
+## Obtain raw format from vcf format using VCFTOOLS and PlINK
+Transform the vcf format into a tped plink format
+``` {r}, engine="bash",
+vcftools --vcf yournameoffile.vcf --plink-tped --out yournameoffile
+done
+```
+ Then transform the plink format to a raw format by ri-unning the following command on your terminal.
+ ``` {r}, engine="bash",
+plink --tped yournameoffile.tped --tfam yournameoffile.tfam --recodeA yournameoffile
+done
+```
+
 ## Read genetic data
 
 ```{r}
-plink_diplodus <- read.table("18512snps-276ind-diplodus.raw", header=TRUE, sep=" ", row.names=1)
+plink_diplodus <- read.table("yournameoffile.raw", header=TRUE, sep=" ", row.names=1)
 dim(plink_diplodus)
 ```
 
@@ -156,9 +168,8 @@ dev.off()
 
 ![RDA visualisation](RDA_diplodus.png)
 
-We extract individuals information.
+We extract individuals information and save it for publication needs.
 ```
-### Extract individuals information
 rda_indv <- as.data.frame(scores(diplodus.rda, display=c("sites")))
 write.table(rda_indv, "rda_diplodus_276ind.txt", quote=FALSE, row.names=TRUE)
 ```
