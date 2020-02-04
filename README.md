@@ -50,7 +50,7 @@ plink --tped yournameoffile.tped --tfam yournameoffile.tfam --recodeA yournameof
 done
 ```
 
-## 2. Start to donwload the genomic and environment data in R
+## 2. Start to download the genomic and environment data in R
 
 ```{r}
 plink_diplodus <- read.table("yournameoffile.raw", header=TRUE, sep=" ", row.names=1)
