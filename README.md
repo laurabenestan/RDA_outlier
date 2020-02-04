@@ -41,13 +41,11 @@ Obtain **raw format** from vcf file using [VCFTOOLS](http://vcftools.sourceforge
 Transform the vcf format into a tped plink format
 ``` {r}, engine="bash",
 vcftools --vcf yournameoffile.vcf --plink-tped --out yournameoffile
-done
 ```
 
 Then transform the plink format to a raw format by re-running the following command on your terminal.
  ``` {r}, engine="bash",
-plink --tped yournameoffile.tped --tfam yournameoffile.tfam --recodeA yournameoffile
-done
+plink --tped yournameoffile.tped --tfam yournameoffile.tfam --recodeA --out yournameoffile
 ```
 
 ## 2. Start to download the genomic and environment data in R
