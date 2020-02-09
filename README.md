@@ -12,7 +12,7 @@ laboratory for the Reservebenefit project.
 
 We used of Redundancy Analysis (RDA) as a genotype-environment association (GEA) method to simultaneously assess the percent of genomic variation explained by environmental variables and to detect loci under selection (see the relevant paper of [Forester et al. 2018](https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.14584). 
 RDA is a two-step analysis in which genetic and environmental data are analyzed using multivariate linear regression. 
-Then PCA of the fitted values is used to produce canonical axes, which are linear combinations of the predictors (Legendre & Legendre, 2012). Here, we performed the RDA on a individual-based sampling design rather than population-based (see [Benestan et al. 2016] paper (https://onlinelibrary.wiley.com/doi/10.1111/mec.13811)).
+Then PCA of the fitted values is used to produce canonical axes, which are linear combinations of the predictors (Legendre & Legendre, 2012). Here, we performed the RDA on a individual-based sampling design rather than population-based, see [Benestan et al. 2016](https://onlinelibrary.wiley.com/doi/10.1111/mec.13811).
 
 ## Application to our dataset
 
